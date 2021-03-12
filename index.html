@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="css/custom.css?v=1.0.2" />
   </head>
   <body>
-    <header class="davi-hero align-items-center">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+    <header class="davi-hero align-items-center position-relative">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#"
             ><img src="img/logotest.png" alt="" width="100"
@@ -38,7 +38,11 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <!-- lacj -->
+          <div
+            class="collapse navbar-collapse align-self-start"
+            id="navbarNavDropdown"
+          >
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -56,14 +60,18 @@
         </div>
       </nav>
 
-      <div class="container">
-        <div class="justify-content-md-center align-items-end row">
-          <h1>Hello</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-            assumenda repellat quasi ullam aliquid et, minima inventore
-            architecto!
-          </p>
+      <div
+        class="container d-flex justify-content-md-center position-absolute lacj-b"
+      >
+        <div class="row">
+          <div class="col-6">
+            <h1>Hello</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              assumenda repellat quasi ullam aliquid et, minima inventore
+              architecto!
+            </p>
+          </div>
         </div>
         <!-- <a href="#0" class="btn davi-btn-primary rounded">CTA</a> -->
       </div>
@@ -204,6 +212,50 @@
         </div>
       </div>
     </div>
+    <footer>
+      <section class="hav-footer">
+        <div class="container">
+          <div class="mx-auto" style="width: 200px">
+            <div class="col-xs-12 text-center">
+              <ul class="list-unstyled quick-links">
+                <div class="container">
+                  <div class="row">
+                    <div class="span12">
+                      <div class="thumbnail center well well-small text-center">
+                        <a class="navbar-brand" href="#"
+                          ><img src="img/logotest.png" alt="" width="100"
+                        /></a>
+                        <h2>Newsletter</h2>
+
+                        <form action="" method="post">
+                          <div class="input-prepend">
+                            <span class="add-on"
+                              ><i class="icon-envelope"></i
+                            ></span>
+                            <input
+                              type="text"
+                              id=""
+                              name=""
+                              placeholder="your@email.com"
+                            />
+                          </div>
+                          <br />
+                          <input
+                            type="submit"
+                            value="Subscribe Now!"
+                            class="btn btn-large"
+                          />
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -212,49 +264,6 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="js/script.js"></script> -->
   </body>
-  <footer>
-    <section class="hav-footer">
-      <div class="container">
-        <div class="mx-auto" style="width: 200px">
-          <div class="col-xs-12 text-center">
-            <ul class="list-unstyled quick-links">
-              <div class="container">
-                <div class="row">
-                  <div class="span12">
-                    <div class="thumbnail center well well-small text-center">
-                      <a class="navbar-brand" href="#"
-                        ><img src="img/logotest.png" alt="" width="100"
-                      /></a>
-                      <h2>Newsletter</h2>
-
-                      <form action="" method="post">
-                        <div class="input-prepend">
-                          <span class="add-on"
-                            ><i class="icon-envelope"></i
-                          ></span>
-                          <input
-                            type="text"
-                            id=""
-                            name=""
-                            placeholder="your@email.com"
-                          />
-                        </div>
-                        <br />
-                        <input
-                          type="submit"
-                          value="Subscribe Now!"
-                          class="btn btn-large"
-                        />
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  </footer>
 </html>

@@ -80,3 +80,10 @@ p {
 .hav-footer {
   background-color: black;
 }
+
+.lacj-b {
+  bottom: 0;
+  background: rgba(200, 200, 200, 0.4);
+  left: 50%;
+  transform: translateX(-50%);
+}
